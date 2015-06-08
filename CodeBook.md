@@ -24,9 +24,15 @@ SITTING
 STANDING
 LAYING
 ###
-### [4] "TimeDomain_BodyAcceleration_Mean_in_X"                              
-#### [5] "TimeDomain_BodyAcceleration_Mean_in_Y"                              
-#### [6] "TimeDomain_BodyAcceleration_Mean_in_Z"                              
+### [4] "TimeDomain_BodyAcceleration_Mean_in_X"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in X evaluated in the time domain. The mean body acceleration was obtained by separating the acceleration signal into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+### [5] "TimeDomain_BodyAcceleration_Mean_in_Y"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in Y evaluated in the time domain. The mean body acceleration was obtained by separating the acceleration signal into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+### [6] "TimeDomain_BodyAcceleration_Mean_in_Z"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in Z evaluated in the time domain. The mean body acceleration was obtained by separating the acceleration signal into body and gravity acceleration signals using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
 ### [7] "TimeDomain_GravityAcceleration_Mean_in_X"                           
 ### [8] "TimeDomain_GravityAcceleration_Mean_in_Y"                           
 ### [9] "TimeDomain_GravityAcceleration_Mean_in_Z"                           
