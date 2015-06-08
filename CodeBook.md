@@ -87,101 +87,140 @@ Observations in this column are the average for each subject and each activity o
 Observations in this column are the average for each subject and each activity of the mean magnitude of the Jerk of the body gyrometer in the time domain. The mean magnitude of the Jerk of body gyrometer was calculated using the three-dimensional signals with the Euclidean norm.
 
 ### [24] "FrequencyDomain_BodyAcceleration_Mean_in_X"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
 ### [25] "FrequencyDomain_BodyAcceleration_Mean_in_Y"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
 ### [26] "FrequencyDomain_BodyAcceleration_Mean_in_Z"
+Observations in this column are the average for each subject and each activity of the mean body acceleration in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
-### [27] "FrequencyDomain_BodyAccelerationJerk_Mean_in_X"                     
-### [28] "FrequencyDomain_BodyAccelerationJerk_Mean_in_Y"                     
-### [29] "FrequencyDomain_BodyAccelerationJerk_Mean_in_Z"                     
-### [30] "FrequencyDomain_BodyGyrometer_Mean_in_X"                            
-### [31] "FrequencyDomain_BodyGyrometer_Mean_in_Y"                            
-### [32] "FrequencyDomain_BodyGyrometer_Mean_in_Z"                            
-### [33] "FrequencyDomain_BodyAccelerationMagnitude_Mean"                     
-### [34] "FrequencyDomain_BodyBodyAccelerationJerkMagnitude_Mean"             
-### [35] "FrequencyDomain_BodyBodyGyrometerMagnitude_Mean"                    
-### [36] "FrequencyDomain_BodyBodyGyrometerJerkMagnitude_Mean"                
-### [37] "Angle_TimeDomain_BodyAccelerationMean_Gravity"                      
-### [38] "Angle_TimeDomain_BodyAccelerationJerkMean_GravityMean"              
-### [39] "Angle_TimeDomain_BodyGyrometerMean_GravityMean"                     
-### [40] "Angle_TimeDomain_BodyGyrometerJerkMean_GravityMean"                 
-### [41] "Angle_GravityMean_in_X"                                             
-### [42] "Angle_GravityMean_in_Y"                                             
-### [43] "Angle_GravityMean_in_Z"
+### [27] "FrequencyDomain_BodyAccelerationJerk_Mean_in_X"
+Observations in this column are the average for each subject and each activity of the mean Jerk of the body acceleration in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [28] "FrequencyDomain_BodyAccelerationJerk_Mean_in_Y"
+Observations in this column are the average for each subject and each activity of the mean Jerk of the body acceleration in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [29] "FrequencyDomain_BodyAccelerationJerk_Mean_in_Z"
+Observations in this column are the average for each subject and each activity of the mean Jerk of the body acceleration in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [30] "FrequencyDomain_BodyGyrometer_Mean_in_X"
+Observations in this column are the average for each subject and each activity of the mean body gyroscope signal in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [31] "FrequencyDomain_BodyGyrometer_Mean_in_Y"
+Observations in this column are the average for each subject and each activity of the mean body gyroscope signal in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [32] "FrequencyDomain_BodyGyrometer_Mean_in_Z"
+Observations in this column are the average for each subject and each activity of the mean body gyroscope signal in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [33] "FrequencyDomain_BodyAccelerationMagnitude_Mean"
+Observations in this column are the average for each subject and each activity of the mean magnitude of the body acceleration evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [34] "FrequencyDomain_BodyAccelerationJerkMagnitude_Mean"
+Observations in this column are the average for each subject and each activity of the mean magnitude of the Jerk of the body acceleration evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+ 
+### [35] "FrequencyDomain_BodyGyrometerMagnitude_Mean"
+Observations in this column are the average for each subject and each activity of the mean magnitude of the body gyrometer evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [36] "FrequencyDomain_BodyGyrometerJerkMagnitude_Mean"
+Observations in this column are the average for each subject and each activity of the mean magnitude of the Jerk of the body gyrometer evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [37] "TimeDomain_BodyAcceleration_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in X evaluated in the time domain. The body acceleration in X was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+
+### [38] "TimeDomain_BodyAcceleration_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in Y evaluated in the time domain. The body acceleration in Y was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
 
-### [44] "TimeDomain_BodyAcceleration_StandardDeviation_in_X"
-Observations in this column are the standard deviation for each subject and each activity of the mean body acceleration in X evaluated in the time domain. The body acceleration in X was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [39] "TimeDomain_BodyAcceleration_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in Z evaluated in the time domain. The body acceleration in Z was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [45] "TimeDomain_BodyAcceleration_StandardDeviation_in_Y"
-Observations in this column are the standard deviation for each subject and each activity of the mean body acceleration in Y evaluated in the time domain. The body acceleration in Y was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [40] "TimeDomain_GravityAcceleration_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of gravity acceleration in X evaluated in the time domain. The gravity acceleration in X was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
+### [41] "TimeDomain_GravityAcceleration_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of gravity acceleration in Y evaluated in the time domain. The gravity acceleration in Y was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [46] "TimeDomain_BodyAcceleration_StandardDeviation_in_Z"
-Observations in this column are the standard deviation for each subject and each activity of the mean body acceleration in Z evaluated in the time domain. The body acceleration in Z was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [42] "TimeDomain_GravityAcceleration_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of gravity acceleration in Z evaluated in the time domain. The gravity acceleration in Z was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [47] "TimeDomain_GravityAcceleration_StandardDeviation_in_X"
-Observations in this column are the standard deviation for each subject and each activity of the mean gravity acceleration in X evaluated in the time domain. The gravity acceleration in X was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [43] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the body acceleration in X. The Jerk was obtained by deriving the body acceleration in X in the time domain.
 
-### [48] "TimeDomain_GravityAcceleration_StandardDeviation_in_Y"
-Observations in this column are the standard deviation for each subject and each activity of the mean gravity acceleration in Y evaluated in the time domain. The gravity acceleration in Y was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [44] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the body acceleration in Y. The Jerk was obtained by deriving the body acceleration in Y in the time domain.
 
-### [49] "TimeDomain_GravityAcceleration_StandardDeviation_in_Z"
-Observations in this column are the standard deviation for each subject and each activity of the mean gravity acceleration in Z evaluated in the time domain. The gravity acceleration in Z was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [45] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the body acceleration in Z. The Jerk was obtained by deriving the body acceleration in Z in the time domain.
 
-### [50] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_X"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the body acceleration in X. The Jerk was obtained by deriving the body acceleration in X in the time domain.
+### [46] "TimeDomain_BodyGyrometer_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyrometer signal in X evaluated in the time domain. The gyroscope signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [51] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_Y"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the body acceleration in Y. The Jerk was obtained by deriving the body acceleration in Y in the time domain.
+### [47] "TimeDomain_BodyGyrometer_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyrometer signal in Y evaluated in the time domain. The gyroscope signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [52] "TimeDomain_BodyAccelerationJerk_StandardDeviation_in_Z"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the body acceleration in Z. The Jerk was obtained by deriving the body acceleration in Z in the time domain.
+### [48] "TimeDomain_BodyGyrometer_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyrometer signal in Z evaluated in the time domain. The gyroscope signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
 
-### [53] "TimeDomain_BodyGyrometer_StandardDeviation_in_X"
-Observations in this column are the standard deviation for each subject and each activity of the mean body gyrometer signal in X evaluated in the time domain. The gyroscope signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [49] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the gyroscope in X. The Jerk was obtained by deriving the gyroscope signal in the time domain.
 
-### [54] "TimeDomain_BodyGyrometer_StandardDeviation_in_Y"
-Observations in this column are the standard deviation for each subject and each activity of the mean body gyrometer signal in Y evaluated in the time domain. The gyroscope signal in Y was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [50] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the gyroscope in Y. The Jerk was obtained by deriving the gyroscope signal in the time domain.
 
-### [55] "TimeDomain_BodyGyrometer_StandardDeviation_in_Z"
-Observations in this column are the standard deviation for each subject and each activity of the mean body gyrometer signal in Z evaluated in the time domain. The gyroscope signal in Z was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
+### [51] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk signal of the gyroscope in Z. The Jerk was obtained by deriving the gyroscope signal in the time domain.
 
-### [56] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_X"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the gyroscope in X. The Jerk was obtained by deriving the gyroscope signal in the time domain.
+### [52] "TimeDomain_BodyAccelerationMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the body acceleration in the time domain. The standard deviation of magnitude of body acceleration was calculated using the three-dimensional signals with the Euclidean norm.
 
-### [57] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_Y"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the gyroscope in Y. The Jerk was obtained by deriving the gyroscope signal in the time domain.
+### [53] "TimeDomain_GravityAccelerationMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the gravity acceleration in the time domain. The standard deviation of magnitude of gravity acceleration was calculated using the three-dimensional signals with the Euclidean norm.
 
-### [58] "TimeDomain_BodyGyrometerJerk_StandardDeviation_in_Z"
-Observations in this column are the standard deviation for each subject and each activity of the mean Jerk signal of the gyroscope in Z. The Jerk was obtained by deriving the gyroscope signal in the time domain.
+### [54] "TimeDomain_BodyAccelerationJerkMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the Jerk of the body acceleration in the time domain. The standard deviation of magnitude of the Jerk of the body acceleration was calculated using the three-dimensional signals with the Euclidean norm.
 
-### [59] "TimeDomain_BodyAccelerationMagnitude_StandardDeviation"
-Observations in this column are the standard deviation for each subject and each activity of the mean magnitude of the body acceleration in the time domain. The mean magnitude of body acceleration was calculated using the three-dimensional signals with the Euclidean norm.
+### [55] "TimeDomain_BodyGyrometerMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the body gyrometer in the time domain. The standard deviation of magnitude of body gyrometer was calculated using the three-dimensional signals with the Euclidean norm.
 
-### [60] "TimeDomain_GravityAccelerationMagnitude_StandardDeviation"
-Observations in this column are the standard deviation for each subject and each activity of the mean magnitude of the gravity acceleration in the time domain. The mean magnitude of gravity acceleration was calculated using the three-dimensional signals with the Euclidean norm.
+### [56] "TimeDomain_BodyGyrometerJerkMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the Jerk of the body gyrometer in the time domain. The standard deviation of magnitude of the Jerk of body gyrometer was calculated using the three-dimensional signals with the Euclidean norm.
 
-### [61] "TimeDomain_BodyAccelerationJerkMagnitude_StandardDeviation"
-Observations in this column are the standard deviation for each subject and each activity of the mean magnitude of the Jerk of the body acceleration in the time domain. The mean magnitude of the Jerk of the body acceleration was calculated using the three-dimensional signals with the Euclidean norm.
+### [57] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
-### [62] "TimeDomain_BodyGyrometerMagnitude_StandardDeviation"
-Observations in this column are the standard deviation for each subject and each activity of the mean magnitude of the body gyrometer in the time domain. The mean magnitude of body gyrometer was calculated using the three-dimensional signals with the Euclidean norm.
+### [58] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
-### [63] "TimeDomain_BodyGyrometerJerkMagnitude_StandardDeviation"
-Observations in this column are the standard deviation for each subject and each activity of the mean magnitude of the Jerk of the body gyrometer in the time domain. The mean magnitude of the Jerk of body gyrometer was calculated using the three-dimensional signals with the Euclidean norm.
+### [59] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of body acceleration in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
 
-### [64] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_X"            
-### [65] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_Y"            
-### [66] "FrequencyDomain_BodyAcceleration_StandardDeviation_in_Z"            
-### [67] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_X"        
-### [68] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_Y"        
-### [69] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_Z"        
-### [70] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_X"               
-### [71] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_Y"               
-### [72] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_Z"               
-### [73] "FrequencyDomain_BodyAccelerationMagnitude_StandardDeviation"        
-### [74] "FrequencyDomain_BodyBodyAccelerationJerkMagnitude_StandardDeviation"
-### [75] "FrequencyDomain_BodyBodyGyrometerMagnitude_StandardDeviation"       
-### [76] "FrequencyDomain_BodyBodyGyrometerJerkMagnitude_StandardDeviation"   
+### [60] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk of the body acceleration in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [61] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk of the body acceleration in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [62] "FrequencyDomain_BodyAccelerationJerk_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of Jerk of the body acceleration in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [63] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_X"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyroscope signal in X evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [64] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_Y"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyroscope signal in Y evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [65] "FrequencyDomain_BodyGyrometer_StandardDeviation_in_Z"
+Observations in this column are the average for each subject and each activity of the standard deviation of body gyroscope signal in Z evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [66] "FrequencyDomain_BodyAccelerationMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the body acceleration evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [67] "FrequencyDomain_BodyAccelerationJerkMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the Jerk of the body acceleration evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+ 
+### [68] "FrequencyDomain_BodyGyrometerMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the body gyrometer evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
+
+### [69] "FrequencyDomain_BodyGyrometerJerkMagnitude_StandardDeviation"
+Observations in this column are the average for each subject and each activity of the standard deviation of magnitude of the Jerk of the body gyrometer evaluated in the frequency domain after performing a fast-Fourier transform on the filtered signals.
