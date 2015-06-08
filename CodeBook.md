@@ -1,7 +1,10 @@
 # Code Book 
-## for GettingCleaningData_Project
 
-[1] "Set"
+for GettingCleaningData_Project
+
+The file describes the meaning of each column in the tidy data set: "TidyData_Step5.txt".
+
+### [1] "Set"
 The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. Observations for this column are: "test" or "train".
 
 [2] "Subject"                                                            
