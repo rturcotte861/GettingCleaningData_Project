@@ -9,14 +9,7 @@ The purpose of this project is to demonstrate your ability to collect, work with
 
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
-# Code Book 
-
 for GettingCleaningData_Project
-
-The file describes the meaning of each column in the tidy data set: "TidyData_Step5.txt".
-
-## The structure is as follow:
-### [column position] Variable name
 
 ## Summary
 The data set "TidyData_Step5.txt" is derived from an experimental dataset in which the sensor signals from an accelerometer and gyroscope from a smartphone (Samsung Galaxy S II) was recorded while participant were performing specific activities. More information on the original dataset can be found here: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones". This modified data contains the average of the mean and the average of the standard deviation of several parameters (described below) for each subject and each activity. For a detailed description of how the orignal data was modified, please refer to the README.md file.
@@ -26,106 +19,93 @@ The data set "TidyData_Step5.txt" is derived from an experimental dataset in whi
 Repository for the Getting and Cleaning Data Course Project
 
 
-##############################################################################################
-# Human Activity Recognition Using Smartphones Dataset
-#
-# This code has the purpose of tidying the data from the original source which can be download here:
-# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-#
-# Read the README.md and CodeBook.md for description of the code and variables
-#
-# This code is divided into 
-# 1. Load all necessary data and information
-# 2. Build one data set
-# 3. Tidying the data into two  distinct datasets
-# 4. Generate Outputs
-#
-# Raphael Turcotte, 2015/06/08
-#
-##############################################################################################
+ Human Activity Recognition Using Smartphones Dataset
 
-### Load all necessary data and information
+ This code has the purpose of tidying the data from the original source which can be download here:
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-# Load required library
-library(tidyr)
-library(dplyr)
+ Read the README.md and CodeBook.md for description of the code and variables
 
-# Load activity and features labels
-activity_labels_Table <-  read.table("./UCI HAR Dataset/activity_labels.txt", header=FALSE, col.names = c("Activity_num","Activity_labels"))
-features <- read.table("./UCI HAR Dataset/features.txt", header=FALSE, col.names = c("Feature_num","Features"))
+ This code is divided into:
+ 1. Load all necessary data and information
+ 2. Build one data set
+ 3. Tidying the data
+ 4. Create a second tidy data set with the average of each variable for each activity and each subject from the tidy data in "Data"
+ 5. Generate Outputs
 
-# Load data from the training set
-X_train <-  read.table("./UCI HAR Dataset/train/X_train.txt", header=FALSE, col.names = features[,2])
-y_train <-  read.table("./UCI HAR Dataset/train/y_train.txt", header=FALSE, col.names = "Activity_label")
-subject_train <-  read.table("./UCI HAR Dataset/train/subject_train.txt", header=FALSE, col.names = "Subject")
+ Raphael Turcotte, 2015/06/08
 
-# Load data from the test set
-X_test <-  read.table("./UCI HAR Dataset/test/X_test.txt", header=FALSE, col.names = features[,2])
-y_test <-  read.table("./UCI HAR Dataset/test/y_test.txt", header=FALSE, col.names = "Activity_label")
-subject_test <-  read.table("./UCI HAR Dataset/test/subject_test.txt", header=FALSE, col.names = "Subject")
+# Detailed Code Description
 
-### Build one data set
+## 1. Load all necessary data and information
 
-# Make one data frame for the training set
-train <- as.data.frame(c(subject_train, y_train, X_train)) # Creating the new data frame
-colnamesTRAIN <- as.list(colnames(train)) # Get column names
-train <- mutate(train, Set = "train") # Generate a train ID
-train <- select(train, Set, get(colnamesTRAIN[[1]]):get(colnamesTRAIN[[length(colnamesTRAIN)]])) # Re-order columns for readibility
+1.1 Load required library: dplyr and tidyr.
 
-# Make one data frame for the test set
-test <- as.data.frame(c(subject_test, y_test, X_test)) # Creating the new data frame
-colnamesTEST <- as.list(names(test)) # Get column names
-test <- mutate(test, Set = "test") # Generate a test ID
-test <- select(test, Set, get(colnamesTEST[[1]]):get(colnamesTEST[[length(colnamesTEST)]])) # Re-order columns for readibility
+1.2 Load activity and features labels.
 
-# Delete unnecessary train and test variables from workspace
-rm(subject_test, y_test, X_test, subject_train, y_train, X_train, features, colnamesTEST, colnamesTRAIN)
+    - Files to load have no header and variable names are assigned for all columns.
+    
+1.3 Load data from the training set
 
-# Merge test and training data frames
-Data <- merge(train, test, all = TRUE)
-rm(train, test) # Deleting non-merged data frames
+  - Read the "X_train.txt" file without header and use features info to label column variables.
+  - Read the "y_train.txt" file without header and label the column variable as "Activity_label".
+  - Read the "subject_train.txt" file without header and label the column variable as "Subject".
 
-### Tidying the data
+1.4 Load data from the test set
 
-# Extracts only the measurements on the mean and standard deviation for each measurement.
-Data <- select(Data,contains("Set"), contains("Subject"), contains("Activity_label"), contains("mean"), contains("std"))
-Data <- select(Data,-contains("meanFreq"),-contains("angle")) # Remove angle and meanFrequency measurements.
+  - Read the "X_test.txt" file without header and use features info to label column variables.
+  - Read the "y_test.txt" file without header and label the column variable as "Activity_label".
+  - Read the "subject_test.txt" file without header and label the column variable as "Subject".
 
-# Uses descriptive activity names to name the activities in the data set
-Data <- mutate(Data, Activity_label = activity_labels_Table[Activity_label,2])
-rm(activity_labels_Table) # Deleting unnecessary variables from workspace
+## 2. Build one data set
 
-# Appropriately labels the data set with descriptive variable names.
-# Explicitly define measurement domain
-names(Data) <-sub("^f", "FrequencyDomain_", names(Data))
-names(Data) <- sub("^t", "TimeDomain_", names(Data))
+2.1 Make one data frame for the training set
 
-# Capitalize parameters
-names(Data) <- gsub("gravity", "Gravity", names(Data))
-names(Data) <- gsub(".mean", "_Mean", names(Data)) # Also replace "." by "_"
+  - Merge all train-related tables as a single data frame (subject_train, y_train, and X_train).
+  - Get column names of the new train data frame
+  - Generate a train ID for all row of the new train data frame as the Set variable.
+  - Re-order column by placing the Set variable at the begining for readibility.
 
-# Eliminate abbreviations
-names(Data) <- gsub("Acc", "Acceleration", names(Data))
-names(Data) <- gsub("Gyro", "Gyrometer", names(Data))
-names(Data) <- gsub("Mag", "Magnitude", names(Data))
-names(Data) <- gsub(".std", "_StandardDeviation", names(Data)) # Also replace "." by "_"
-names(Data) <- gsub("BodyBody", "Body", names(Data)) # Clean up Body labels
+2.2 Make one data frame for the test set
 
-# Make reference to X, Y, and Z more tidy
-names(Data) <- sub("\\.", "", names(Data))
-names(Data) <- sub("\\.", "", names(Data))
-names(Data) <- sub("\\.", "_in_", names(Data))
+  - Merge all test-related tables as a single data frame (subject_test, y_test, and X_test).
+  - Get column names of the new test data frame
+  - Generate a test ID for all row of the new test data frame as the Set variable.
+  - Re-order column by placing the Set variable at the begining for readibility.
 
-# From the tidy data in "Data", a second, independent tidy data set is created set 
-# with the average of each variable for each activity and each subject.
-TidyData_Step5 <- group_by(Data, Set, Subject, Activity_label) # Define grouping variables
-TidyData_Step5 <- summarise_each(TidyData_Step5, funs(mean)) # Evaluate the mean of all non-grouping variables for all groups
+2.3 Delete unnecessary train and test variables from workspace
 
-### Generate Outputs
+2.4 Merge test and training data frames using merge() with the option "all = TRUE".
 
-# Save tidy data 2 as a txt file
-write.table(TidyData_Step5, file = "TidyData_Step5.txt", row.name=FALSE)
+2.5 Delete remaining train and test variables from workspace
 
-# Remove "Data" from workspace
-rm(Data)
+## 3. Tidying the data
+
+3.1 Extracts only the measurements on the mean and standard deviation for each measurement.
+
+  - Select only columns with names containing "Set", "Subject", "Activity_label", "mean", or "std" using select().
+  - Remove columns with names containing "meanFreq" and "angle" using select().
+
+3.2 Uses descriptive activity names to name the activities in the data set
+  - Change the numeric activity label to the description of the activity with words.
+  - Delete activy labels information outside of the main data frame.
+
+3.3 Appropriately labels the data set with descriptive variable names.
+  - Explicitly define measurement domain
+  - Capitalize parameters
+  - Eliminate abbreviations
+  - Eliminate degenerate word recurrence
+  - Make reference to X, Y, and Z more tidy
+
+## 4. Create a second tidy data set with the average of each variable for each activity and each subject from the tidy data in "Data"
+
+4.1 Define grouping variables Data, Set, Subject, and Activity_label using group_by.
+
+4.2 Evaluate the mean of all non-grouping variables and return the result as a new data set.
+
+## 5. Generate Outputs
+
+5.1 Save new tidy data "TidyData_Step5.txt" using write.table with the option "row.name=FALSE"
+
+5.2 Remove the first Tidy data "Data" from workspace such taht the output is the tidy data generated in step 4.
 
