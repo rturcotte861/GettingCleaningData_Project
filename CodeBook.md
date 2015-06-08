@@ -4,11 +4,11 @@ for GettingCleaningData_Project
 
 The file describes the meaning of each column in the tidy data set: "TidyData_Step5.txt".
 
+## Summary
+The data set "TidyData_Step5.txt" is derived from an experimental dataset in which the sensor signals from an accelerometer and gyroscope from a smartphone (Samsung Galaxy S II) were recorded while participant were performing specific activities. More information on the original dataset can be found here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. This modified data contains the average of the mean and the average of the standard deviation of several parameters (described below) for each subject and each activity. For a detailed description of how the orignal data was modified, please refer to the README.md file. This file describes the meaning of each column in the data set.
+
 ## The structure is as follow:
 ### [column position] Variable name
-
-## Summary
-The data set "TidyData_Step5.txt" is derived from an experimental dataset in which the sensor signals from an accelerometer and gyroscope from a smartphone (Samsung Galaxy S II) was recorded while participant were performing specific activities. More information on the original dataset can be found here: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones". This modified data contains the average of the mean and the average of the standard deviation of several parameters (described below) for each subject and each activity. For a detailed description of how the orignal data was modified, please refer to the README.md file.
 
 ## Variable description
 
