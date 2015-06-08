@@ -1,14 +1,24 @@
-# Code Book GettingCleaningData_Project
-Repository for the Getting and Cleaning Data Course Project
- [1] "Set"                                                                
- [2] "Subject"                                                            
- [3] "Activity_label"                                                     
- [4] "TimeDomain_BodyAcceleration_Mean_in_X"                              
- [5] "TimeDomain_BodyAcceleration_Mean_in_Y"                              
- [6] "TimeDomain_BodyAcceleration_Mean_in_Z"                              
- [7] "TimeDomain_GravityAcceleration_Mean_in_X"                           
- [8] "TimeDomain_GravityAcceleration_Mean_in_Y"                           
- [9] "TimeDomain_GravityAcceleration_Mean_in_Z"                           
+# Code Book 
+## for GettingCleaningData_Project
+
+[1] "Set"
+The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. Observations for this column are: "test" or "train".
+
+[2] "Subject"                                                            
+[3] "Activity_label"
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+[4] "TimeDomain_BodyAcceleration_Mean_in_X"                              
+[5] "TimeDomain_BodyAcceleration_Mean_in_Y"                              
+[6] "TimeDomain_BodyAcceleration_Mean_in_Z"                              
+[7] "TimeDomain_GravityAcceleration_Mean_in_X"                           
+[8] "TimeDomain_GravityAcceleration_Mean_in_Y"                           
+[9] "TimeDomain_GravityAcceleration_Mean_in_Z"                           
 [10] "TimeDomain_BodyAccelerationJerk_Mean_in_X"                          
 [11] "TimeDomain_BodyAccelerationJerk_Mean_in_Y"                          
 [12] "TimeDomain_BodyAccelerationJerk_Mean_in_Z"                          
