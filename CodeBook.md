@@ -8,23 +8,18 @@ The file describes the meaning of each column in the tidy data set: "TidyData_St
 ### [column position] Variable name
 
 ## Summary
+The data set "TidyData_Step5.txt" is derived from an experimental dataset in which the sensor signals from an accelerometer and gyroscope from a smartphone (Samsung Galaxy S II) was recorded while participant were performing specific activities. More information on the original dataset can be found here: "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones". This modified data contains the average of the mean and the average of the standard deviation of several parameters (described below) for each subject and each activity. For a detailed description of how the orignal data was modified, please refer to the README.md file.
 
 ## Variable description
 
 ### [1] "Set"
-The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. Observations for this column identify the set in which a subjects are: "test" or "train".
+The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. This column identifies the set in which a subjects are: "test" or "train".
 
 ### [2] "Subject"
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.  Observations for this column identify individual subjects: 1-30.
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. This column identifies individual subjects: 1-30.
 
 ### [3] "Activity_label"
-
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
+Each subject performed six activities: wearing a smartphone (Samsung Galaxy S II) on the waist: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING. This column identifies the activity.
 
 ### [4] "TimeDomain_BodyAcceleration_Mean_in_X"
 Observations in this column are the average for each subject and each activity of the mean body acceleration in X evaluated in the time domain. The body acceleration in X was obtained by separating the acceleration signal into body and gravity acceleration signals using a low pass Butterworth filter with a corner frequency of 0.3 Hz. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. The acceleration signal in X was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
