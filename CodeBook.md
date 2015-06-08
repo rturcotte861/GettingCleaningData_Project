@@ -4,18 +4,26 @@ for GettingCleaningData_Project
 
 The file describes the meaning of each column in the tidy data set: "TidyData_Step5.txt".
 
-### [1] "Set"
-The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. Observations for this column are: "test" or "train".
+## The structure is as follow:
+### [column position] Variable name
 
-[2] "Subject"                                                            
-[3] "Activity_label"
+#
+
+### [1] "Set"
+The original dataset was randomly partitioned into two sets: where 70% of the volunteers was selected for generating the training data and 30% the test data. Observations for this column identify the set in which a subjects are: "test" or "train".
+
+### [2] "Subject"
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.  Observations for this column identify individual subjects: 1-30.
+
+### [3] "Activity_label"
+
 WALKING
 WALKING_UPSTAIRS
 WALKING_DOWNSTAIRS
 SITTING
 STANDING
 LAYING
-
+###
 [4] "TimeDomain_BodyAcceleration_Mean_in_X"                              
 [5] "TimeDomain_BodyAcceleration_Mean_in_Y"                              
 [6] "TimeDomain_BodyAcceleration_Mean_in_Z"                              
