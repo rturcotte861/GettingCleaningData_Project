@@ -43,7 +43,7 @@ Repository for the Getting and Cleaning Data Course Project
 
 1.2 Load activity and features labels.
 
-    - Files to load have no header and variable names are assigned for all columns.
+  - Files to load have no header and variable names are assigned for all columns.
     
 1.3 Load data from the training set
 
@@ -94,10 +94,10 @@ Repository for the Getting and Cleaning Data Course Project
   - Explicitly define measurement domain
   - Capitalize parameters
   - Eliminate abbreviations
-  - Eliminate degenerate word recurrence
+  - Eliminate degenerated word recurrence
   - Make reference to X, Y, and Z more tidy
 
-## 4. Create a second tidy data set with the average of each variable for each activity and each subject from the tidy data in "Data"
+## 4. Create a second tidy data set with the average of each variable for each activity and each subject from the tidy data obtained from steps 1-3.
 
 4.1 Define grouping variables Data, Set, Subject, and Activity_label using group_by.
 
