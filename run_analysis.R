@@ -6,11 +6,16 @@
 #
 # Read the README.md and CodeBook.md for description of the code and variables
 #
-# This code is divided into 
-# 1. Load all necessary data and information
-# 2. Build one data set
-# 3. Tidying the data into two  distinct datasets
-# 4. Generate Outputs
+# This script is divided into 5 sections:
+#   1. Load all necessary data and information from test and train datasets.
+#   2. Build one data set by merging the test and train data sets.
+#   3. Tidying the data
+#   - Extracts only the measurements on the mean and standard deviation for each measurement for the step 2 data table.
+#   - Variables and labels are renames as needed.
+#   4. Create a second tidy data set
+#   - The new data set contains the average of each variable for each activity and each subject from the step 3 data table.
+#   5. Generate Outputs
+#   - The primary output is "TidyData_Step5.txt". It consists of the data table created in step 4.
 #
 # Raphael Turcotte, 2015/06/08
 #
@@ -88,6 +93,7 @@ names(Data) <- sub("\\.", "", names(Data))
 names(Data) <- sub("\\.", "", names(Data))
 names(Data) <- sub("\\.", "_in_", names(Data))
 
+### Create new tidy data set
 # From the tidy data in "Data", a second, independent tidy data set is created set 
 # with the average of each variable for each activity and each subject.
 TidyData_Step5 <- group_by(Data, Set, Subject, Activity_label) # Define grouping variables
