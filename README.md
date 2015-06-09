@@ -1,7 +1,9 @@
 # README.md
  
 For the R script called run_analysis.R
+
 Written by Raphael Turcotte, 2015/06/08
+
 Part of GettingCleaningData_Project
 
 ## Summary
